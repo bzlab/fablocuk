@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body style="width: 360px; height: 480px; background-color:#8C8C8C">
+    <div style="height: 100%; display: flex; flex-direction: column; color: white;">
+        <span class="text-white font-semibold text-sm hover:cursor-pointer hover:text-blue-600 p-4" type="button" id="geriButton"> < Geri </span>
+      <div id="chaincodeRunContainer" style="display: flex; flex-direction:column; gap: 24px; align-items: center;">
+        <div class="border-b border-blue-600 px-8 py-4" style="display: flex; color: white; font-size: 16px;">Chaincode Calistir</div>
+      <div id="configContainer" style="display: flex; gap: 12px;">
+      <button id="channelIdCreate" class="shadow-lg rounded-full hover:bg-blue-400 hover:cursor-pointer py-2 px-6 bg-blue-500 font-semibold">Channel ID Yarat</button>
+      <button id="chaincodeIdCreate" class="shadow-lg rounded-full hover:bg-blue-400 hover:cursor-pointer py-2 px-6 bg-blue-500 font-semibold">Chaincode ID Yarat</button>
+      </div> 
+      <form style="display: flex; flex-direction:column; gap:12px" class=" items-center">
+        <div class="flex flex-col w-48">
+        <span>Channel ID</span>
+        <select id="channelId" class="h-6 px-4 border-gray-400 border rounded-lg focus:border-blue-400 outline-none text-black">
+        
+        </select>
+        </div>
+        <div class="flex flex-col w-48">
+        <span>Chaincode ID</span>
+        <select id="chaincodeId" class="h-6 px-4 border-gray-400 border rounded-lg focus:border-blue-400 outline-none text-black">
+            
+        </select>
+        </div>
+        <div class="flex flex-col w-48">
+        <span>Method</span>
+        <input type="text" id="chaincodeMethod" value="" class="h-6 px-4 border-gray-400 border rounded-lg focus:border-blue-400 outline-none text-black"/>
+        </div>
+        <div class="flex flex-col w-48">
+        <span>Argumanlar</span>
+        <span style="color: brown;">Argumanlari Virgulle Ayiriniz</span>
+        <input type="text" id="argumans" value="" class="h-6 px-4 border-gray-400 border rounded-lg focus:border-blue-400 outline-none text-black"/>
+        </div>
+        <div id="buttonContainer" style="display: flex; gap: 12px; width: 100%; justify-content: center;">
+            <input type="button" id="chaincodeRunInvoke" value="Invoke" class="shadow-lg rounded-full hover:bg-blue-400 hover:cursor-pointer py-2 px-6 bg-blue-500 font-semibold"/>
+            <input type="button" id="chaincodeRunQuery" value="Query" class="shadow-lg rounded-full hover:bg-blue-400 hover:cursor-pointer py-2 px-6 bg-blue-500 font-semibold"/>
+        </div>
+    </form>
+      </div> 
+    </div>
+  </body>
+  <script src="../../js/chaincodeRun.js" type="module"></script>
+  <script src="../../js/tailwind.js"></script>
+</html>

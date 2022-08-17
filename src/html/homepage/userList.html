@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body style="width: 360px; height: 480px; background-color:#8C8C8C">
+    <div style="width: 100%; height: 100%; display: flex; flex-direction: column; color: white;">
+      <span class="text-white font-semibold text-sm hover:cursor-pointer hover:text-blue-600 p-4" type="button" id="geriButton"> < Geri </span>
+      <span id="erisimWarning" style="display: none;">Bu sayfaya erisim izniniz bulunmamaktadir.</span>
+      <div id="userListContainer" style="display: flex; flex-direction:column; gap: 24px; align-items: center;">
+       <div class="border-b border-blue-600 px-8 py-4" style="display: flex; align-items: flex-start; color: white; font-size: 16px;">User List</div>
+       <div id="userListListContainer" style="display: flex; flex-direction:column;">
+        <div id="userListDiv" style="display: flex;" class="gap-x-12">
+          <div id="userListId" style="display: flex; flex-direction: column;">
+          <h4 class="text-black font-semibold underline py-2">Fabric ID</h4>
+          </div>
+          <div id="userListType" style="display: flex; flex-direction: column;">
+          <h4 class="text-black font-semibold underline py-2">Type</h4>
+          </div>
+        </div>
+       </div>
+    </div>
+  </body>
+  <script src="../../js/userList.js" type="module"></script>
+  <script src="../../js/tailwind.js"></script>
+</html>

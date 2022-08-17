@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body style="width: 360px; height: 480px; background-color:#8C8C8C">
+    <div style="height: 100%; display: flex; flex-direction: column; color: white;">
+        <span class="text-white font-semibold text-sm hover:cursor-pointer hover:text-blue-600 p-4" type="button" id="geriButton"> < Geri </span>
+      <div id="chaincodeRunResultContainer" style="display: flex; flex-direction:column; gap: 24px; align-items: center;">
+        <div class="border-b border-blue-600 px-8 py-4" style="display: flex; align-items: flex-start; color: white; font-size: 16px;">Chaincode Sonuc</div>
+        <textarea id="jsonData" style="width: 240px; height: 320px; outline: none; resize: none; color: black;" class="p-4 rounded-lg shadow-lg" readonly></textarea>
+      </div> 
+    </div>
+  </body>
+  <script src="../../js/chaincodeRunResult.js" type="module"></script>
+  <script src="../../js/tailwind.js"></script>
+</html>

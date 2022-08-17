@@ -1,0 +1,13 @@
+{
+    "name": "Fablo Rest Wallet",
+    "description": "Fablo extension",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "html/intro.html"
+    },
+    "icons": {
+        "128": "img/bzlabicon.png"
+      },
+    "host_permissions": ["http://localhost:8801/*"]
+}

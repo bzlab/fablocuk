@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body style="width: 360px; height: 480px; background-color:#8C8C8C">
+    <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center">
+      <div class="p-16" style="display: flex; flex-direction:column; gap: 24px; align-items: center; justify-content: space-between; height: 100%;">
+       <div class="flex flex-col justify-center">
+        <div class="border-b border-blue-600 px-8 py-4" style="display: flex; align-items: flex-start; color: white; font-size: 16px;">BZLab Fablo Enabler</div>
+       <div class="text-white text-base text-center py-4">Islem Paneli</div>
+      </div>
+       <div class="grid grid-cols-2 gap-4 text-white">
+        <button id="userListBut" style="display: none;" class="shadow-lg rounded-lg hover:bg-blue-400 hover:cursor-pointer bg-blue-500 font-semibold p-4">Kullanicilari Listele</button>
+        <button id="registerUser" style="display: none;" class="shadow-lg rounded-lg hover:bg-blue-400 hover:cursor-pointer bg-blue-500 font-semibold p-4">Yeni Kullanici Olustur</button>
+        <button id="chaincodeRun" class="shadow-lg rounded-lg hover:bg-blue-400 hover:cursor-pointer bg-blue-500 font-semibold p-4">Chaincode Calistir</button>
+        <button id="logout" class="shadow-lg rounded-lg hover:bg-blue-400 hover:cursor-pointer bg-blue-500 font-semibold p-4">Cikis Yap</button>
+       </div>
+       <span id="fabricIdSpan" class="text-white text-base text-center "></span>
+    </div>
+  </body>
+  <script src="../../js/main.js" type="module"></script>
+  <script src="../../js/logout.js" type="module"></script>
+  <script src="../../js/tailwind.js"></script>
+</html>
